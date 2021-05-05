@@ -1,11 +1,3 @@
-variable "git_token" {
-  type = string
-}
-
-variable "git_user" {
-  type = string
-}
-
 #----------------------------------------------------------
 
 variable "repository_name" {
