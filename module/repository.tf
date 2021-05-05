@@ -23,13 +23,10 @@ resource "github_team_repository" "Add_rights" {
 #----------------------------------------------------------
 
 #Gestion protection d'une branche spécifiée sur le repository créé précédemment
-resource "github_branch_protection_v3" "branch_protection" {
+resource "github_branch_protection" "branch_protection" {
   repository       = github_repository.repo_create.name
   branch           = var.branch_protection_name
   enforce_admins   = var.branch_protection_enforce_admin
-  
-  restrictions {
-    users = []
-  }
+  allows_deletions = var.branch_protection_allows_deletions
 }
 

@@ -77,3 +77,8 @@ variable "branch_protection_name" {
 variable "branch_protection_enforce_admin" {
   type = bool
 }
+
+variable "branch_protection_allows_deletions" {
+  type = bool
+}
+
