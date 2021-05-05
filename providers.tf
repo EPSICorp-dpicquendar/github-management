@@ -1,5 +1,5 @@
 provider "github" {
   token = var.git_token
-  owner = "EPSICorp-dpicquendar"
+  owner = var.git_orga
 }
 
