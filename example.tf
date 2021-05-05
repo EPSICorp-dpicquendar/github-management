@@ -38,9 +38,9 @@ module "myteam" {
   #----------------------------------------------------------  
 
   #Gestion de la protection d'une branche spécifiée dans le repository créé précédemment
-  branch_protection_pattern            = "main"
-  branch_protection_enforce_admin      = true
-  branch_protection_allows_deletions   = true
+  branch_protection_pattern          = "main"
+  branch_protection_enforce_admin    = true
+  branch_protection_allows_deletions = true
 }
 
 #Test push
