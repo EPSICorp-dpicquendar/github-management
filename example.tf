@@ -9,6 +9,7 @@ module "myteam" {
   repository_visibility  = "public"
   repository_gitignore   = "Terraform"
   repository_has_wiki    = true
+  repository_auto_init   = true
 
   #----------------------------------------------------------
 

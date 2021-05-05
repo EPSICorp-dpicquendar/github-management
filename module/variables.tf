@@ -20,6 +20,10 @@ variable "repository_has_wiki" {
   type = bool
 }
 
+variable "repository_auto_init" {
+  type = bool
+}
+
 #----------------------------------------------------------
 
 variable "user_name" {

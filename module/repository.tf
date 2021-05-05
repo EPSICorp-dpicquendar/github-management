@@ -7,6 +7,7 @@ resource "github_repository" "repo_create" {
   visibility         = var.repository_visibility
   gitignore_template = var.repository_gitignore
   has_wiki           = var.repository_has_wiki
+  auto_init          = var.repository_auto_init
 }
 
 #----------------------------------------------------------
