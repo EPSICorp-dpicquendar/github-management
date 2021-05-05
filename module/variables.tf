@@ -70,7 +70,7 @@ variable "repository_team_rights" {
 
 #----------------------------------------------------------
 
-variable "branch_protection_name" {
+variable "branch_protection_pattern" {
   type = string
 }
 
