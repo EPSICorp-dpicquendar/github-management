@@ -1,12 +1,12 @@
 #----------------------------------------------------------
 
 #Ajout d'un repository à l'organisation
-resource "github_repository" "repo_create"{
-  name                = var.repository_name
-  description         = var.repository_description
-  visibility          = var.repository_visibility
-  gitignore_template  = var.repository_gitignore
-  has_wiki            = var.repository_has_wiki
+resource "github_repository" "repo_create" {
+  name               = var.repository_name
+  description        = var.repository_description
+  visibility         = var.repository_visibility
+  gitignore_template = var.repository_gitignore
+  has_wiki           = var.repository_has_wiki
 }
 
 #----------------------------------------------------------
@@ -23,8 +23,8 @@ resource "github_team_repository" "Add_rights" {
 
 #Gestion protection d'une branche spécifiée sur le repository créé précédemment
 resource "github_branch_protection_v3" "branch_protection" {
-  repository     = github_repository.repo_create.name
-  branch         = var.branch_protection_name
+  repository = github_repository.repo_create.name
+  branch     = var.branch_protection_name
 
   restrictions {
     users = []
