@@ -73,3 +73,7 @@ variable "repository_team_rights" {
 variable "branch_protection_name" {
   type = string
 }
+
+variable "branch_protection_enforce_admin" {
+  type = bool
+}
